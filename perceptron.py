@@ -1,7 +1,7 @@
 import numpy as np
 
 class Perceptron:
-  def __init__(self, wSize, b):
+  def __init__(self, wSize, b=None):
     rng = np.random.default_rng()
     self.w = rng.uniform(low=-0.01, high=0.01, size=(wSize, 1))
     self.b = b or rng.uniform(low=0.0, high=1.0)
